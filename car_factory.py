@@ -5,3 +5,4 @@ class CarFactory(ABC):
     @abstractmethod
     def create_car(self):
         pass
+
