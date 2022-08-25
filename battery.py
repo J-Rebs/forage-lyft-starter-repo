@@ -13,8 +13,8 @@ class Battery(ABC):
 
 
 class SpindlerBattery(Battery):
-    def __init__(self, last_service_date):
-        super().__init__(last_service_date)
+    def __init__(self, last_service_date, current_date):
+        super().__init__(last_service_date, current_date)
 
     def needs_service(self):
         service_year = self.last_service_date.year + 2
@@ -22,8 +22,8 @@ class SpindlerBattery(Battery):
         return service_threshold_date < self.current_date
 
 class NubbinBattery(Battery):
-    def __init__(self, last_service_date):
-        super().__init__(last_service_date)
+    def __init__(self, last_service_date, current_date):
+        super().__init__(last_service_date, current_date)
 
     def needs_service(self):
         service_year = self.last_service_date.year + 4
