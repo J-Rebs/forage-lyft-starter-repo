@@ -8,3 +8,19 @@ class Car(ABC):
     @abstractmethod
     def needs_service(self):
         pass
+
+class Calliope(Car):
+
+
+class Glissade(Car):
+
+
+class Palindrome(Car):
+
+
+
+class Rorschach(Car):
+
+
+
+class Thovex(Car):
